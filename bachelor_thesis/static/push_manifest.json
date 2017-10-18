@@ -1,0 +1,26 @@
+{
+    "/static/data/100MB.html":{
+        "type": "style",
+        "weight": 1
+    },
+    "/static/data/100MB.css":{
+        "type": "style",
+        "weight": 1
+    },
+    "/static/data/100MB.js":{
+        "type": "style",
+        "weight": 1
+    },
+    "/static/data/200MB.html":{
+        "type": "style",
+        "weight": 1
+    },
+    "/static/data/200MB.css":{
+        "type": "style",
+        "weight": 1
+    },
+    "/static/data/200MB.js":{
+        "type": "style",
+        "weight": 1
+    }
+}

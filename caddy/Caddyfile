@@ -1,0 +1,10 @@
+bachelor.dev:443, bachelor.dev:80 {
+    tls self_signed
+
+    push
+
+    proxy / 127.0.0.1:8000 {
+        transparent
+    }
+
+}

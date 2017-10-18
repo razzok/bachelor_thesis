@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <title>Ajax it!</title>
+    </head>
+    <body>
+        <p>Ajax HTML</p>
+        <div id="target1">
+            Der erste Text !
+        </div>
+        <div id="target2">
+            Der erste Text !
+        </div>
+        <div id="target3">
+            Der erste Text !
+        </div>
+        <div id="target4">
+            Der erste Text !
+        </div>
+        <div id="target5">
+            Der erste Text !
+        </div>
+        <div id="target6">
+            Der erste Text !
+        </div>
+        <div id="target7">
+            Der erste Text !
+        </div>
+        <div id="target8">
+            Der erste Text !
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $.get('source.html', function (data) {
+                    $('#target1').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target2').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target3').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target4').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target5').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target6').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target7').html(data);
+                })
+                $.get('source.html', function (data) {
+                    $('#target8').html(data);
+                })
+            });
+        </script>
+    </body>
+</html>

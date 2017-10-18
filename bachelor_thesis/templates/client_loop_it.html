@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loop it!</title>
+    </head>
+    <body>
+        <p>Client Loop HTML</p>
+    </body>
+    <script>
+        var queryString = window.location.search;
+        var counter = parseInt(queryString.substr(1));
+        var newCounter = counter + 1;
+
+        if(counter < 20) {
+           window.location = window.location.pathname + "?" + newCounter;
+        }
+    </script>
+</html>

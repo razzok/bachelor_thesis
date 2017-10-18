@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="prefetch" href="{{ url_for('static', filename='data/100MB.js') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/100MB.css') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/200MB.css') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/200MB.js') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/300MB.css') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/300MB.js') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/400MB.css') }}" />
+        <link rel="prefetch" href="{{ url_for('static', filename='data/400MB.js') }}" />
+
+        <title>Fetch it!</title>
+    </head>
+    <body>
+        <p>Fetch HTML</p>
+    </body>
+</html>

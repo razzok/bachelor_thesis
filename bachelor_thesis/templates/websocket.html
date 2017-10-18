@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Websocket</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            var socket = io.connect('http://bachelor.dev')
+
+            socket.on('connect', function(){
+                socket.send('User has connected!');
+            });
+
+            socket.on('c_message', function(data) {
+                console.log(data);
+            });
+
+            socket.on('message', function(msg) {
+                $('#message').append('<li>'+msg+'</li>');
+            });
+
+            $('#sendButton').on('click', function() {
+                socket.send($('#myMessage').val());
+                $('#myMessage').val('')
+            });
+
+        });
+    </script>
+
+
+    <p>Websocket HTML !</p>
+    <ul id="message"></ul>
+    <input type="text" id="myMessage">
+    <button id="sendButton">Send</button>
+</body>
+</html>

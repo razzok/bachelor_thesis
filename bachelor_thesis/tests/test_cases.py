@@ -73,7 +73,7 @@ class TestCasesAndCreateHAR():
 
 
 if __name__ == '__main__':
-    path = "Path/to/BrowserMob_Proxy"
+    path = "Path/to/BrowserMob_Proxy/bin"
 
     RUN = TestCasesAndCreateHAR(path)
     RUN.main()

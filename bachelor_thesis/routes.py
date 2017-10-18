@@ -18,7 +18,7 @@ def index():
 
 
 @app.route('/http2/push')
-@http2push('Path/to/Push_manifest')
+@http2push('Path/to/push_manifest')
 def http_2_push():
     return render_template('push_it.html')
 
@@ -47,7 +47,7 @@ def html_5_push():
     return render_template('fetch_it.html')
 
 
-@app.route('/javascript/client_loop?1')
+@app.route('/javascript/client_loop')
 def javascript_client_loop():
     return render_template('client_loop_it.html')
 
